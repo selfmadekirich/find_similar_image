@@ -4,7 +4,7 @@ from imports import *
 from ImageWorkerKNN import ImageWorkerKNN
 
 def run():
-    image_worker = ImageWorkerKNN('db.csv')
+    image_worker = ImageWorkerKNN('db.csv',use_clip=True)
     st.title('Find similar images')
     file = st.file_uploader('Upload image')
     if file is not None:
